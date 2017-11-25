@@ -1,0 +1,210 @@
+
+
+body {
+	font-family: "Montserrat";
+}
+header {
+	padding-bottom: 25px;
+}
+.build {
+	width: 100%;
+	background-color: #F8F8F8;
+}
+.format {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+.name, .nav {
+	font-weight: 900;
+}
+.name {
+	font-size: 2em;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+ul {
+	padding: 0;
+	display: block;
+	list-style-type: none;
+}
+li {
+	background-color: white;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: 5px;
+}
+li a {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+.container {
+	width: 85%;
+	margin: 25px auto;
+	text-align: center;
+}
+.profile-img {
+	height: 70%;
+	width: 70%;
+	margin: 20px auto;
+}
+.bio {
+	font-size: 1.1em;
+	font-weight: 100;
+	color: #999999;
+	line-height: 1.5;
+}
+.content-header {
+	margin: 30px auto;
+}
+.portfolio {
+	width: 100%;
+	background-color: white;
+}
+.portfolio-img {
+	width: 100%;
+	margin: 20px auto;
+}
+hr {
+	margin-top: 70px;
+}
+footer .name {
+	font-size: unset;
+	float: left;
+}
+footer .to-top {
+	float: right;
+}
+footer .nav {
+	display: none;
+}
+
+/*HELPER CLASSES*/
+
+.clearfix::after {
+	content: "";
+  display: table;
+  clear: both;
+}
+.padding {
+	padding: 30px 0;
+}
+
+@media only screen and (min-width: 769px) {
+	.container {
+		width: 90%;
+	}
+	.name {
+		padding-top: 50px;
+	}
+	ul {
+		margin: 0;
+	}
+	li {
+		background-color: unset;
+		text-align: center;
+		display: inline-block;
+		margin: auto 20px;
+	}
+	.profile-img{
+		width: 40%;
+		display: inline;
+		float: right;
+	}
+	.bio{
+		width: 55%;
+		float: left;
+		text-align: left;
+	}
+	.items{
+		width: 95%;
+	}
+	.portfolio-item{
+		margin: 1%;
+		width: 48%;
+		display: inline-block;
+		float: left;
+	}
+	.portfolio-img{
+		margin-bottom: 0;
+	}
+	footer .info{
+		width: 80%;
+		margin: 0 auto;
+	}
+	footer .contact {
+		padding-top: 20px;
+	}
+	footer .foot{
+		width: 100%;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	footer .name{
+		padding: 0;
+		margin: 20px auto;
+		text-align: center;
+		font-weight: bold;
+	}
+	.to-top{
+		display: none;
+		margin: 20px auto;
+	}
+	footer .nav{
+		display: inherit;
+		float: right;
+		margin: 20px auto;
+		font-weight: unset;
+	}
+	footer .nav li{
+		margin: 0 10px;
+		float: right;
+		font-size: .9em;
+		font-weight: bold;
+	}
+	footer .nav a {
+		padding: 0;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.name{
+		padding: 0;
+		margin: 30px auto;
+		display: inline-block;
+		float: left;
+	}
+	header, footer.format{
+		width: 90%;
+		margin: 0 auto;
+	}
+	header .nav{
+		display: inline-block;
+		float: right;
+	}
+	header .nav li {
+		margin: 30px 10px;
+	}
+	.portfolio {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.portfolio-item{
+		margin: .5%;
+		width: 32.3%;
+	}
+	footer p {
+		width: 70%;
+		margin: 10px auto;
+	}
+	footer .foot, hr {
+		width: 95%;
+	}
+}
